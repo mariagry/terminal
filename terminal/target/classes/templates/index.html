@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Terminal</title>
+    <link rel="stylesheet" href="/terminal.css">
+</head>
+<body>
+<div id="terminal" contenteditable="true" spellcheck="false">
+    <p>Welcome to the Interactive Terminal</p>
+</div>
+<div class="color-block">
+    <div>
+        <div >
+            <label for="windowColor">Колір вікна:</label>
+            <input class="input-color" type="color" id="windowColor" value="#234">
+        </div>
+        <div>
+            <label for="textColor">Колір тексту:</label>
+            <input class="input-color" type="color" id="textColor" value="#00ff0011">
+        </div>
+    </div>
+    <button onclick="saveColorSettings()">Зберегти кольори</button>
+</div>
+<script src="/js/terminal.js">
+</script>
+</body>
+</html>
